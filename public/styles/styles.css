@@ -1,0 +1,52 @@
+body
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  rgba(201,93,99,1);
+    font-family: 'Jura', sans-serif;
+}
+
+h1.title
+{
+    color: #496ddb;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Bungee Outline', cursive !important;
+}
+p.tagline
+{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.buttons
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    min-height: 40px;
+}
+.buttons button
+{
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    min-width: 60%;
+    border: none;
+    outline: none;
+    
+}
+.buttons button:hover
+{
+    filter: grayscale(50%);
+    border-radius: 18px;
+}
+.buttons button.signin
+{
+    background-color: #496ddb;
+}
+.buttons button.register
+{
+    background-color: #ee8434;
+}
