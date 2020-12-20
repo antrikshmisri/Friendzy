@@ -9,7 +9,12 @@ app.use('/styles', express.static(__dirname + '/public'));
 app.get('/' , (req , res) =>{
     res.render('index')
 })
-
+app.get('/signin' , (req , res) =>{
+    res.render('signin')
+})
+app.get('/register' , (req , res) =>{
+    res.render('register')
+})
 app.listen(5050 , ()=>{
     console.log('listening on port 5050')
 })
