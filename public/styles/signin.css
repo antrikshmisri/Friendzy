@@ -8,7 +8,18 @@ body
     background:  rgba(201,93,99,1);
     font-family: 'Jura', sans-serif;
 }
-
+.disabled
+{
+  pointer-events: none;
+}
+form
+{
+  width: 500px;
+  padding: 0 0 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 h1.title
 {
     color: #496ddb;
@@ -94,3 +105,4 @@ h1.title
     color: #472876;
     text-decoration: none;
   }
+  

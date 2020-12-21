@@ -2,30 +2,32 @@
   <body>
     <div class="container-fluid main-container">
       <div class="row justify-content-center mx-0">
-        <div class="col-lg-12 col-sm-12 signin-container">
+        <div class="col-lg-12 col-sm-12 signin-container" style="border: 2px solid red;">
           <h1 class="title">SIGN-IN</h1>
           <div class="container user-inputs">
-            <div class="row">
+            <div class="row justify-content-center">
+              <form>
               <div class="col-lg-12">
-                <input id="userSIEmail" oninput="checkEmail('userSIEmail' , 'userSIEmailError')"
-                type="text" required placeholder="Email" />
+                <input id="userSIEmail" required oninput="checkEmail('userSIEmail' , 'userSIEmailError');"
+                type="text"  placeholder="Email" />
                 <small id="userSIEmailError" class="form-text text-danger"
                   >Please check your login information.</small
                 >
               </div>
               <div class="col-lg-12">
-                <input id="userSIPassword" oninput="checkPass('userSIPassword','userSIPasswordError')"
-                type="password" required placeholder="Password" />
+                <input id="userSIPassword" required oninput="checkPass('userSIPassword','userSIPasswordError')"
+                type="password"  placeholder="Password" />
                 <small id="userSIPasswordError" class="form-text text-danger"
                   >Please check your password.</small
                 >
               </div>
-              <div class="col-lg-6 my-2">
-                <button type="submit" id="signin-button">Sign In</button>
+              <div class="col-lg-12 my-2">
+                <button type="submit" id="signin-button" class="btn">Sign In</button>
               </div>
-              <div class="col-lg-6 my-2 register">
+              </form>
+              <div class="col-lg-12 my-2 register">
                 <a href="/register"
-                  ><button id="register-button">Register</button></a
+                  ><button id="register-button" class="btn">Register</button></a
                 >
               </div>
             </div>
