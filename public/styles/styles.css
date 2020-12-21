@@ -12,23 +12,46 @@ body
     overflow-x: hidden
 }
 
-/* .overlay-div
+.overlay-div
 {
-
+    border-bottom-left-radius: 50%;
+    border-bottom: 2px solid #fafafa;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: #fafafa;
+    width: 90vh;
+    min-height: 90vh;
     position: absolute;
     top: 0;
     left: 0;
     margin: 0 0;
-
-} */
-
+    transform: translateX(-51%) translateY(-51%) rotate3d(0,0,1,-45deg);
+    background-color: #333;
+}
+.overlay-div .span-div
+{
+    min-height: 30vh;
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.overlay-div .span-div span
+{
+    text-transform: uppercase;
+    font-weight: 700;
+}
 h1.title
 {
     /* mix-blend-mode: color-dodge; */
     color: #496ddb;
     font-size: 5rem;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 800;
     font-family: 'Bungee Outline', cursive !important;
 }
 p.tagline
@@ -51,12 +74,16 @@ p.tagline
     min-width: 60%;
     border: none;
     outline: none;
-    
+    border-bottom: 5px solid #fafafa;
 }
 .github button
 {
     color: #fafafa;
     background-color: #333;
+}
+.buttons button:hover
+{
+    border-bottom: 1px solid #fafafa;
 }
 .buttons button:hover
 {

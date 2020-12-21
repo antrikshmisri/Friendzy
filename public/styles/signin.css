@@ -35,6 +35,8 @@ h1.title
     justify-content: center;
   }
   .signin-container {
+    border-bottom: 10px solid #333;
+    border-top: 10px solid #333;
     max-width: 475px !important;
     min-width: 60% !important;
     min-height: 75vh !important;
